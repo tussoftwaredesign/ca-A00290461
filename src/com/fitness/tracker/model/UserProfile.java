@@ -41,7 +41,13 @@ public final class UserProfile {
         return String.format("User Profile: %s, Age: %d, Weight: %.2f kg, Height: %.2f m",
                 name, age, weight, height);
     }
+    public double calculateBMI() {
+        return weight / (height * height);
+    }
 
+    public String displayBMI() {
+        return String.format("BMI: %.2f", calculateBMI());
+    }
     // Equals and HashCode
     @Override
     public boolean equals(Object o) {

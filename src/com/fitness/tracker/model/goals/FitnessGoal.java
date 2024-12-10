@@ -3,8 +3,8 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public record FitnessGoal(
-        String goalType,      // e.g., "Calories" or "Workout Duration"
-        double targetValue,   // e.g., 2000 calories, 300 minutes
+        String goalType,
+        double targetValue,
         LocalDate startDate,
         LocalDate endDate
 ) {
@@ -18,7 +18,10 @@ public record FitnessGoal(
             throw new IllegalArgumentException("Start date must not be after end date.");
         }
     }
-
+    // Getter method for targetValue
+    public double targetValue() {
+        return targetValue;
+    }
     @Override
     public String toString() {
         return String.format("Goal: %s, Target: %.2f, Duration: %s to %s",

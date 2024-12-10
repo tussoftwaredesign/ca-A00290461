@@ -1,52 +1,33 @@
-# Fitness Tracker Application
+# Fitness Tracker
 
-This is a Java-based fitness tracker application that allows users to set fitness goals, track progress, and view summaries of their progress. It demonstrates various Java features, including object-oriented principles, core Java APIs, defensive copying, and records.
+The Fitness Tracker is a Java-based application designed to help users monitor and achieve their fitness goals effectively. It supports personalized profiles, goal tracking, and detailed workout logging.
 
-## Features
+## User Stories
 
-### 1. **User Profile and Goals**
+1. **Create and Display User Profile**  
+   Allow users to create a personalized profile with details such as name, age, weight, and fitness preferences.
 
-- **User Profile:** Allows users to input their basic information like name, age, weight, and height.
-- **Fitness Goals:** Users can set fitness goals (e.g., daily calorie target, weekly workout duration) and monitor progress towards these goals.
+2. **Set and Track Fitness Goals**  
+   Enable users to set fitness goals and track their progress over time.
 
-#### **Technologies Used:**
-- Java 23 (LTS)
-- Core Java APIs (`String`, `StringBuilder`, `List`, `ArrayList`, `Date API`)
+3. **Display Different Workout Types**  
+   Provide a variety of workout types for users to choose from, such as cardio, strength, and flexibility exercises.
 
-### 2. **Set Fitness Goals**
+4. **Track Progress Towards Fitness Goals**  
+   Continuously display progress toward achieving set fitness goals based on logged activities.
 
-As a user, I want to set fitness goals (e.g., daily calorie target, weekly workout duration) and monitor my progress towards these goals.
+5. **Log Individual & Multiple Workouts**  
+   Allow users to log individual workouts or multiple workouts at once with details like duration and calories burned.
 
-- **Records**: Used for defining `FitnessGoal` as an immutable record type.
-- **Defensive Copying**: Ensures that the `FitnessGoal` object is safely copied when accessed, preventing external modifications.
-- **Core Java APIs (Date/Time)**: Used for handling dates and times (goal start date, end date) and calculating goal progress.
+6. **Filter Workouts by Date Range**  
+   Enable filtering of workout logs by specific date ranges for detailed analysis.
 
-### 3. **View Goal Summary and Progress**
+7. **View Total Calories Burned**  
+   Summarize and display the total calories burned over a selected time frame.
 
-As a user, I want to view a summary of my fitness goals and their status (e.g., "50% of your weekly goal achieved").
+8. **Update and Validate Workout Details**  
+   Provide functionality to update workout details and validate inputs for consistency.
 
-- Displays the percentage of the goal achieved so far.
-- Provides feedback on whether the user has met their goal or not.
-
-#### **Technologies Used:**
-- **Java Records**: Used for defining `FitnessGoal` and `FitnessProgress` as immutable objects.
-- **Defensive Copying**: Ensures that the goal object is protected from external modification.
-- **Core Java APIs (Date/Time)**: Used for calculating and tracking goal progress over time.
-
-## Setup Instructions
-
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/tussoftwaredesign/ca-A00290461.git
-    ```
-
-2. **Open in IntelliJ IDEA**:
-    - Open the project in IntelliJ IDEA.
-    - Ensure you're using JDK 23.0.1 (or a compatible version).
-
-3. **Run the Application**:
-    - Right-click on `Main.java` and select **Run**.
-
-## Directory Structure
-
+9. **Set a Default Workout**  
+   Allow users to set a default workout type for quick logging.
 

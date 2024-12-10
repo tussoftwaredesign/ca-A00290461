@@ -51,6 +51,28 @@ public class FitnessProgress {
         double percentage = getGoalAchievementPercentage();
         return String.format("You have achieved %.2f%% of your weekly goal", percentage);
     }
+    // Show progress bar for the goal achievement
+    public void showProgressBar() {
+        double totalProgress = getTotalProgress();
+        double goalCalories = goal.targetValue();
+        int progress = (int) ((totalProgress / goalCalories) * 100);
+
+        // Displaying the progress bar
+        StringBuilder bar = new StringBuilder("[");
+        int completed = progress / 2; // To scale up to 50 characters (each '#' represents 2%)
+        for (int i = 0; i < 50; i++) {
+            if (i < completed) {
+                bar.append("#");
+            } else {
+                bar.append(" ");
+            }
+        }
+        bar.append("] " + progress + "%");
+
+        // Print the progress bar
+        System.out.println(bar.toString());
+    }
+
     @Override
     public String toString() {
         return String.format("Goal: %s, Total Progress: %.2f, Goal Met: %b",
