@@ -1,0 +1,4 @@
+Workout Details:
+Type: RUNNING, Calories Burned: 350.0, Date: 2025-03-29
+Type: CYCLING, Calories Burned: 400.0, Date: 2025-03-30
+Type: YOGA, Calories Burned: 150.0, Date: 2025-03-31

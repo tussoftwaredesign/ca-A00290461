@@ -1,6 +1,6 @@
 package com.fitness.tracker.model.goals;
+
 import java.time.LocalDate;
-import java.util.Objects;
 
 public record FitnessGoal(
         String goalType,
@@ -18,13 +18,12 @@ public record FitnessGoal(
             throw new IllegalArgumentException("Start date must not be after end date.");
         }
     }
-    // Getter method for targetValue
-    public double targetValue() {
-        return targetValue;
-    }
+
     @Override
     public String toString() {
         return String.format("Goal: %s, Target: %.2f, Duration: %s to %s",
                 goalType, targetValue, startDate, endDate);
     }
 }
+
+

@@ -80,4 +80,19 @@ public record Workout(WorkoutType type, int durationMinutes, double caloriesBurn
         return String.format("Workout: %s - %d minutes, %.2f calories on %s",
                 workout.type, workout.durationMinutes, workout.caloriesBurned, workout.date);
     }
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public WorkoutType getType() {
+        return type;
+    }
+
+    public int getDuration() {
+        return durationMinutes;
+    }
+
+    public double getCaloriesBurned() {
+        return caloriesBurned;
+    }
 }

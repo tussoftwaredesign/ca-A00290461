@@ -1,7 +1,9 @@
 package com.fitness.tracker.model.goals;
+
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
+
 public class FitnessProgress {
     private final FitnessGoal goal;
     private final Map<LocalDate, Double> dailyProgress; // Maps date to progress value (e.g., calories burned)
@@ -51,6 +53,7 @@ public class FitnessProgress {
         double percentage = getGoalAchievementPercentage();
         return String.format("You have achieved %.2f%% of your weekly goal", percentage);
     }
+
     // Show progress bar for the goal achievement
     public void showProgressBar() {
         double totalProgress = getTotalProgress();
@@ -71,6 +74,13 @@ public class FitnessProgress {
 
         // Print the progress bar
         System.out.println(bar.toString());
+    }
+
+    // Method to estimate calories burned based on duration
+    public double estimateCalories(int durationInMinutes) {
+        // Assuming a burn rate of 8 calories per minute (this can be adjusted)
+        double caloriesPerMinute = 8.0;
+        return caloriesPerMinute * durationInMinutes;
     }
 
     @Override
