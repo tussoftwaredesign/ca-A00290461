@@ -34,25 +34,33 @@ The Fitness Tracker is a Java-based application designed to help users monitor a
 ## Technical User Stories
 
 1. **Use Streams for Data Processing**
+   
    I want to rapidly process and analyse exercise data using Java Streams. So that I can carry out tasks like sorting, counting, and filtering without changing the original data.
 
 2. **Implement Collectors for Grouping and Partitioning**
+   
    I would like to separate and group workout data according to various parameters using Java Collectors. So that I can classify exercises according to their type or calorie ranges.
 
 3. **Implement Limit Functionality**
+
    I want to limit the number of results in Streams by implementing the limit() function. So that I can show only the best workouts according to a particular criterion (eg., 2 top workouts with the highest calories burned).
 
 4. **Implement Predicate for High-Intensity Workouts**
+   
    I would like to implement a predicate that would filter very strenuous workouts  according to a criterion (e.g., calories burned > 300). So that only intense exercises can be shown on the app when necessary.
 
 5. **Implement Sorting with Java Streams & Generics**
+   
    I want to take advantage of Java's functional programming features, So that I can effectively sort workouts in a type-safe manner.
 
 6. **Implement Multi-Threading with ExecutorService**
+
    I want to perform several workout completion tasks asynchronously. So that the app keep the program responsive.
 
 7. **Store Workouts Using Java NIO2**
+   
    I want to efficiently write exercise logs to a file. So that the application makes use of modern file input/output techniques.
 
 8. **Implement Localization with ResourceBundle**
+   
    I want to load localized strings dynamically, So that the app can support many languages.
