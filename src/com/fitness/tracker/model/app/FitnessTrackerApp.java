@@ -20,7 +20,7 @@ public class FitnessTrackerApp {
         // Workouts List
         List<Workout> workouts = List.of(
                 new Workout(WorkoutType.RUNNING, 45, 350, LocalDate.of(2025, 3, 29)),
-                new Workout(WorkoutType.CYCLING, 60, 400, LocalDate.of(2025, 3, 30)),
+                new Workout(WorkoutType.CYCLING, 60, 500, LocalDate.of(2025, 3, 30)),
                 new Workout(WorkoutType.YOGA, 30, 150, LocalDate.of(2025, 3, 31))
         );
 
@@ -76,7 +76,7 @@ public class FitnessTrackerApp {
         filteredWorkouts.forEach(w -> System.out.println("Filtered Workout: " + w.getType() + ", " + w.getCaloriesBurned() + " cal"));
 
         System.out.println("Unique Workout Types: " + uniqueWorkoutTypes);
-        System.out.println("Sorted Workouts: " + sortedWorkouts);
+        System.out.println("Sorted Workouts : " + sortedWorkouts);
         System.out.println("Workout Summaries: " + workoutSummaries);
         System.out.println("Workout Calories Map: " + workoutCaloriesMap);
         System.out.println("Grouped By Type: " + groupedByType);
